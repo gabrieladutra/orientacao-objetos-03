@@ -1,29 +1,29 @@
 package exercicios;
 
 public class Circulo {
-  private Double raio;
+    private Double raio;
 
-  public Circulo(Double raio) {
-    setRaio(raio);
-  }
-
-  public Double getRaio() {
-    return raio;
-  }
-
-  public void setRaio(Double raio) {
-    if (raio <= 0) {
-      throw new RuntimeException("raio negativo");
+    public Circulo(Double raio) {
+        setRaio(raio);
     }
-    this.raio = raio;
-  }
 
-  public Double calcularCircunferencia() {
-    return 2 * Math.PI * raio;
-  }
+    public Double getRaio() {
+      return raio;
+    }
 
-  public Double calcularArea() {
-    return Math.pow(raio, 2) * Math.PI;
-  }
+    public void setRaio(Double raio) {
+        if (raio <= 0) {
+            throw new RuntimeException("raio negativo");
+        }
+        this.raio = raio;
+    }
+
+    public Double calcularCircunferencia() {
+      return 2 * Math.PI * raio;
+    }
+
+    public Double calcularArea() {
+      return Math.pow(raio, 2) * Math.PI;
+    }
 
 }

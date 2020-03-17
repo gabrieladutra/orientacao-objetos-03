@@ -13,7 +13,6 @@ public class Retangulo {
     return base;
   }
 
-
   public Double getAltura() {
     return altura;
   }
